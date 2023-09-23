@@ -1,8 +1,9 @@
-import './App.css';
 import Login from './components/Login/login';
 import {BrowserRouter as Router, Routes,Route} from 'react-router-dom'
 import Home from './components/Home/home';
 import Submit from './components/Submit/submit'
+import Main from './components/Main/main'
+import Todo from './components/todo/todo';
 
 function App() {
   return (
@@ -11,6 +12,8 @@ function App() {
           <Route exact path='/login' Component={Login}></Route>
           <Route exact path='/' Component={Home}></Route>
           <Route exact path='/submit' Component={Submit}></Route>
+          <Route exact path='/main' Component={Main}></Route>
+          <Route exact path='/todo' Component={Todo}></Route>
         </Routes>
       </Router>
   );

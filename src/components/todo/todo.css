@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+.todos-bg-container {
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.loginlogo {
+    height: 200px;
+}
+.dustbin {
+    font-size: 24px;
+    text-align: center;
+}
+
+.todos-heading {
+    text-align: center;
+    font-family: 'Fira Code', monospace;
+    font-size: 46px;
+    font-weight: bolder;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+.row {
+    text-align: center;
+}
+.logo-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.create-task-heading {
+    font-family: 'Fira Code', monospace;
+    font-size: 32px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0px;
+}
+
+.create-task-heading-subpart {
+    font-family: 'Fira Code', monospace;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.todo-items-heading {
+    font-family: 'Fira Code', monospace;
+    font-size: 32px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.todo-items-heading-subpart {
+    font-family: 'Fira Code', monospace;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.todo-items-container {
+    margin: 0;
+    padding: 0;
+}
+
+.todo-item-container {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.todo-user-input {
+    background-color: white;
+    width: 100%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e4e7eb;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 15px;
+}
+.inputform {
+    width: 250px;
+    height: 10px;
+    background-color: black;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #7eff00;
+    outline: none; 
+    transition: border-color 0.3s; 
+  }
+
+  .massgreen {
+    color: #7eff00;
+  }
+  
+  .inputform:focus {
+    border-color: #7eff00; 
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+  }
+
+.button {
+    color: white;
+    background-color: #4c63b6;
+    font-family: "Roboto";
+    font-size: 18px;
+    border-width: 0;
+    border-radius: 4px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.logbut {
+    background-color: #343232; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px; 
+    cursor: pointer; 
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 16px; 
+  }
+  
+  .logbut:hover {
+    background-color: #4caf50; 
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+  }
+
+.label-container {
+    background-color: #000000;
+    width: 100%;
+    border-style: solid;
+    border-width: 5px;
+    border-color:#7eff00;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+}
+
+.checkbox-input {
+    width: 20px;
+    height: 20px;
+    margin-top: 12px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.checkbox-label {
+    font-family: "Roboto";
+    font-size: 20px;
+    color: #7eff00;
+    font-weight: 400;
+    text-align: left;
+    width: 82%;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+}
+
+.delete-icon-container {
+    text-align: right;
+    width: 18%;
+    padding-top: 5px;
+    padding-right: 5px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.delete-icon {
+    padding: 15px;
+}
+
+.checked {
+    text-decoration: line-through;
+    color: #ffffff;
+}
+
+.credits {
+    font-size: 25px;
+    font-family: 'Fira Code', monospace;
+    font-weight: bold;
+    font-style: italic;
+    color: #ffffff;
+}

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './home.css'
 
 function Home() {
   const [userData, setUserData] = useState([]);
@@ -29,7 +30,7 @@ function Home() {
 
   return (
     <div>
-      <table>
+      <table  className='home-bg'>
         <thead>
           <tr>
             <th>First Name</th>

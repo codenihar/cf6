@@ -1,0 +1,9 @@
+.main-container {
+    text-align: left !important; /* Align the content within this container to the left */
+}
+
+.hello {
+    font-size: 50px;
+    color: #ffffff;
+    text-align: left !important;
+}
