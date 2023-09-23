@@ -9,6 +9,7 @@ Welcome to MassCoders Digital Age Wellbeing, a web application designed to promo
 - Dashboard
 - Joke Generator
 - Articles
+- Todo List
 
 ## Features
 
@@ -62,6 +63,11 @@ Visit the "Joke Generator" section for a quick laugh. Each time you click the "G
 
 Explore our collection of articles to gain insights into enhancing your mental health, dealing with social media pressure, and addressing online harassment. Feel free to contribute your own articles to share your knowledge and experiences with the community.
 <img width="1421" alt="image" src="https://github.com/codenihar/cf6/assets/82893577/74f169da-236d-4402-bbab-34cd657bda11">
+
+
+## Todo List
+Uses Local Storage to store the data of todos. Data doesnt erases even after reloading the webpage.
+<img width="1398" alt="image" src="https://github.com/codenihar/cf6/assets/82893577/2e968190-08fc-4f11-b85b-5e9fbbb62490">
 
 
 
