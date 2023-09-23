@@ -32,21 +32,21 @@
   }
 
   .logbut {
-    background-color: #343232; /* Default background color */
-    color: white; /* Text color */
-    border: none; /* Remove border */
-    padding: 10px 20px; /* Padding for button */
-    margin: 5px; /* Margin for spacing between buttons */
-    cursor: pointer; /* Show pointer cursor on hover */
-    border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s, transform 0.3s; /* Transition for smooth hover effect */
-    font-size: 16px; /* Font size */
+    background-color: #343232; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px; 
+    cursor: pointer; 
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 16px; 
   }
   
   .logbut:hover {
-    background-color: #4caf50; /* Green background color on hover */
-    transform: scale(1.2); /* Increase size on hover */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow on hover */
+    background-color: #4caf50; 
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
   }
 
   .inputform {
@@ -59,7 +59,7 @@
     font-size: 16px;
     color: #7eff00;
     outline: none; 
-    transition: border-color 0.3s; /* Add a transition for border color changes */
+    transition: border-color 0.3s; 
   }
 
   .massgreen {
@@ -67,8 +67,8 @@
   }
   
   .inputform:focus {
-    border-color: #7eff00; /* Change border color on focus */
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a subtle box shadow on focus */
+    border-color: #7eff00; 
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
   }
   
   .headinglogin {

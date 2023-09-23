@@ -1,9 +1,48 @@
-import React, { useState } from 'react';
+import React, {useNavigate, useState } from 'react';
+import {auth} from '../../firebase'
 import './login.css';
+import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'firebase/auth';
+
 
 function Login() {
   const [showLoginForm, setShowLoginForm] = useState(false);
   const [showSignupForm, setShowSignupForm] = useState(false);
+  const [email, setEmail] = useState('');
+  const [password,setPassword] = useState('');
+  const auth = getAuth();
+
+  const signIn = (e) => {
+    e.preventDefault();
+    signInWithEmailAndPassword(auth,email,password)
+    .then((userCredential)=>{
+      console.log(userCredential._tokenResponse.registered)
+      if(userCredential._tokenResponse.registered===true){
+        window.location.replace('/submit');
+      }
+    }).catch((error)=>{
+      console.log(error.code);
+      if(error.code==='auth/invalid-login-credentials'){
+        alert('Invalid Login Credentials');
+      }
+      
+    });
+    
+    //window.history.pushState({}, undefined, "/");
+    //window.location.reload();
+  }
+
+  const signUp = (e) => {
+    e.preventDefault();
+    createUserWithEmailAndPassword(auth,email,password)
+    .then((useCredential)=>{
+      console.log(useCredential)
+      window.location.replace('/submit');
+    }).catch((error)=>{
+      console.log(error);
+      alert("User already exist")
+    });
+  }
+
 
   const toggleLoginForm = () => {
     setShowLoginForm(true);
@@ -23,38 +62,31 @@ function Login() {
       <div className="right-half">
   <h2 class="logwelcome">Welcome <span className='massgreen'>MassCoder!</span><br />Let's stay <span className='massgreen'>Productive</span>.</h2>
   {showLoginForm ? (
-    <form>
+    <form onSubmit={signIn}>
       <div>
-        <label htmlFor="username" className='headinglogin'>Username:</label>
-        <input type="text" id="username" name="username" className='inputform' />
+        <label htmlFor="username" className='headinglogin'>Email:</label>
+        <input type="email" id="username" name="username" className='inputform' value={email} onChange={(e)=>setEmail(e.target.value)} />
       </div>
       <br/>
       <div>
         <label htmlFor="password" className='headinglogin'>Password:</label>
-        <input type="password" id="password" name="password" className='inputform' />
+        <input type="password" id="password" name="password" className='inputform' value={password} onChange={(e)=>setPassword(e.target.value)} />
       </div>
       <br/>
-      <button onClick={toggleSignupForm} className='logbut'>Switch to Signup</button>
       <button type="submit" className='logbut'>Login</button>
     </form>
   ) : showSignupForm ? (
-    <form>
-      <div>
-        <label htmlFor="signup-username" className='headinglogin' >Username:</label>
-        <input type="text" id="signup-username" name="signup-username" className='inputform' />
-      </div>
-      <br/>
+    <form onSubmit={signUp}>
       <div>
         <label htmlFor="signup-email" className='headinglogin'>Email:</label>
-        <input type="email" id="signup-email" name="signup-email" className='inputform' />
+        <input type="email" id="signup-email" name="signup-email" className='inputform' value={email} onChange={(e)=>setEmail(e.target.value)} />
       </div>
       <br/>
       <div>
         <label htmlFor="signup-password" className='headinglogin'>Password:</label>
-        <input type="password" id="signup-password" name="signup-password" className='inputform' />
+        <input type="password" id="signup-password" name="signup-password" className='inputform' value={password} onChange={(e)=>setPassword(e.target.value)} />
       </div>
       <br/>
-      <button onClick={toggleLoginForm} className='logbut'>Switch to Login</button>
       <button type="submit"  className='logbut'>Signup</button>
     </form>
   ) : (
