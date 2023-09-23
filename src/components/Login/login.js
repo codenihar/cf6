@@ -39,7 +39,8 @@ function Login() {
       window.location.replace('/submit');
     }).catch((error)=>{
       console.log(error);
-      alert("User already exist")
+      alert("User already exist");
+      window.location.replace('/login');
     });
   }
 
@@ -60,11 +61,11 @@ function Login() {
         <img src="https://res.cloudinary.com/nihars3/image/upload/v1695443443/MassCoders/mass-coders-color-pallet-transparent_ewp94m.png" className='loginlogo' />
       </div>
       <div className="right-half">
-  <h2 class="logwelcome">Welcome <span className='massgreen'>MassCoder!</span><br />Let's stay <span className='massgreen'>Productive</span>.</h2>
+  <h2 class="logwelcome">Welcome <span className='massgreen'>MassCoder!</span><br />Let's stay <span className='massgreen'>Productive</span>.<br/><br/></h2>
   {showLoginForm ? (
     <form onSubmit={signIn}>
       <div>
-        <label htmlFor="username" className='headinglogin'>Email:</label>
+        <label htmlFor="username" className='headinglogin hl-2'>Email:</label>
         <input type="email" id="username" name="username" className='inputform' value={email} onChange={(e)=>setEmail(e.target.value)} />
       </div>
       <br/>
@@ -73,12 +74,14 @@ function Login() {
         <input type="password" id="password" name="password" className='inputform' value={password} onChange={(e)=>setPassword(e.target.value)} />
       </div>
       <br/>
-      <button type="submit" className='logbut'>Login</button>
+      <div className='lb-cont'>
+        <button type="submit" className='logbut'>Login</button>
+      </div>
     </form>
   ) : showSignupForm ? (
     <form onSubmit={signUp}>
       <div>
-        <label htmlFor="signup-email" className='headinglogin'>Email:</label>
+        <label htmlFor="signup-email" className='headinglogin hl-2'>Email:</label>
         <input type="email" id="signup-email" name="signup-email" className='inputform' value={email} onChange={(e)=>setEmail(e.target.value)} />
       </div>
       <br/>
@@ -87,10 +90,9 @@ function Login() {
         <input type="password" id="signup-password" name="signup-password" className='inputform' value={password} onChange={(e)=>setPassword(e.target.value)} />
       </div>
       <br/>
-      <button type="submit"  className='logbut'>Signup</button>
     </form>
   ) : (
-    <div>
+    <div className='button-cont'>
       <button onClick={toggleLoginForm}  className='logbut'>Login</button>
       <button onClick={toggleSignupForm}  className='logbut'>Signup</button>
     </div>

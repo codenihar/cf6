@@ -56,8 +56,7 @@ function Todo() {
         <div className="row">
           <div>
           <div className="logo-cont">
-            <img src="https://res.cloudinary.com/nihars3/image/upload/v1695443443/MassCoders/mass-coders-color-pallet-transparent_ewp94m.png" className='loginlogo' />
-            <h1 className="todos-heading">TO-DO</h1>
+            <h1 className="todos-heading">TO-DO <span className="masscolor">List</span></h1>
           </div>
             <h1 className="create-task-heading">
               Create Task

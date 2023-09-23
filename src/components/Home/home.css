@@ -8,10 +8,17 @@ body {
   }
   
   .table-container {
-    width: 80%; /* Adjust this value as needed */
+    width: 80%;
     margin: auto;
   }
-  
+  .screenon {
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .masscolor-main {
+    color: #4caf50;
+  }
   table {
     width: 100%;
     border-collapse: collapse;

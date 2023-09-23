@@ -29,8 +29,8 @@
   .logwelcome {
     font-family: 'Fira Code', monospace;
     font-size: 40px;
+    text-align: center;
   }
-
   .logbut {
     background-color: #343232; 
     color: white;
@@ -51,9 +51,9 @@
 
   .inputform {
     width: 200px;
-    height: 10px;
+    height: 60px;
     background-color: black;
-    padding: 10px;
+    padding: 100px;
     border: 1px solid #ffffff;
     border-radius: 5px;
     font-size: 16px;
@@ -76,8 +76,14 @@
     font-size: 16px;
     color: #ffffff;
     font-weight: bold; 
-    padding-right: 10px; 
+    padding-right: 20px; 
     letter-spacing: 1px;
+  }
+  .lb-cont{
+    text-align: center;
+  }
+  .hl-2 {
+    padding-left: 35px;
   }
   
   

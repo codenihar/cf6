@@ -5,7 +5,6 @@ function Home() {
   const [userData, setUserData] = useState([]);
 
   useEffect(() => {
-    // Fetch data when the component mounts
     fetch("https://codefurymc6-default-rtdb.firebaseio.com/userDataRecords.json", {
       method: "GET",
       headers: {
@@ -16,10 +15,9 @@ function Home() {
         if (!res.ok) {
           throw new Error('Network response was not ok');
         }
-        return res.json(); // This returns a promise
+        return res.json(); 
       })
       .then((data) => {
-        // Transform the data object into an array
         const userDataArray = Object.values(data);
         setUserData(userDataArray);
       })
@@ -30,6 +28,7 @@ function Home() {
 
   return (
     <div>
+      <h1 className='screenon'>Mass<span className='masscolor-main'>Coders</span> Screen-on Time (in hrs)</h1>
       <table  className='home-bg'>
         <thead>
           <tr>

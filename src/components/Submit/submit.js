@@ -64,7 +64,8 @@ const Submit = () => {
     <>
       <div className="details">
                   <form method="POST" className="form">
-                    <h1 className="heading">Enter your details</h1>
+                    <h1 className="heading">Enter your Name and Screen-on Time (in hrs)</h1>
+                        <br/><br/>
                         <input
                           type="text"
                           name="firstName"
