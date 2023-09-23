@@ -1,7 +1,5 @@
 # MassCoders Digital Age Wellbeing
 
-![MassCoders Logo](logo.png)
-
 Welcome to MassCoders Digital Age Wellbeing, a web application designed to promote digital well-being among our community members. This application offers a range of features to help you monitor and improve your digital habits, access entertaining content, and stay informed about topics related to mental health, social media pressure, and online harassment.
 
 ## Table of Contents
