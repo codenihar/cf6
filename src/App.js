@@ -4,7 +4,8 @@ import Home from './components/Home/home';
 import Submit from './components/Submit/submit'
 import Main from './components/Main/main'
 import Todo from './components/todo/todo';
-import Bard from './components/Bard/bard'
+import Bard from './components/Bard/bard';
+import Article from './components/Article/article';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route exact path='/main' Component={Main}></Route>
           <Route exact path='/todo' Component={Todo}></Route>
           <Route exact path='/bard' Component={Bard}></Route>
+          <Route exact path='/article' Component={Article}></Route>
         </Routes>
       </Router>
   );
