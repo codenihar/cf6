@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300&family=Fira+Code&display=swap');
+
+.login-container {
+    display: flex;
+    height: 100vh;
+    background-color: black;
+  }
+  
+  .left-half {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .right-half {
+    flex: 1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .loginlogo {
+    height: 50vw;
+  }
+  
+  .logwelcome {
+    font-family: 'Fira Code', monospace;
+    font-size: 40px;
+  }
+
+  .logbut {
+    background-color: #343232; /* Default background color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Padding for button */
+    margin: 5px; /* Margin for spacing between buttons */
+    cursor: pointer; /* Show pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.3s; /* Transition for smooth hover effect */
+    font-size: 16px; /* Font size */
+  }
+  
+  .logbut:hover {
+    background-color: #4caf50; /* Green background color on hover */
+    transform: scale(1.2); /* Increase size on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow on hover */
+  }
+
+  .inputform {
+    width: 200px;
+    height: 10px;
+    background-color: black;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #7eff00;
+    outline: none; 
+    transition: border-color 0.3s; /* Add a transition for border color changes */
+  }
+
+  .massgreen {
+    color: #7eff00;
+  }
+  
+  .inputform:focus {
+    border-color: #7eff00; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a subtle box shadow on focus */
+  }
+  
+  .headinglogin {
+    font-family: 'Encode Sans', sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: bold; 
+    padding-right: 10px; 
+    letter-spacing: 1px;
+  }
+  
+  
+
+  @media (max-width: 768px) {
+    .login-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+    }
+  
+    .left-half {
+      order: 1; 
+    }
+  
+    .right-half {
+      order: 2; 
+    }
+  }
+  
