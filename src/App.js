@@ -11,8 +11,8 @@ function App() {
   return (
       <Router>
         <Routes>
-          <Route exact path='/login' Component={Login}></Route>
-          <Route exact path='/' Component={Home}></Route>
+          <Route exact path='/home' Component={Home}></Route>
+          <Route exact path='/' Component={Login}></Route>
           <Route exact path='/submit' Component={Submit}></Route>
           <Route exact path='/main' Component={Main}></Route>
           <Route exact path='/todo' Component={Todo}></Route>

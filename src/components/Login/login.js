@@ -66,12 +66,12 @@ function Login() {
     <form onSubmit={signIn}>
       <div>
         <label htmlFor="username" className='headinglogin hl-2'>Email:</label>
-        <input type="email" id="username" name="username" className='inputform' value={email} onChange={(e)=>setEmail(e.target.value)} />
+        <input type="email" id="username" name="username" className='inputformm' value={email} onChange={(e)=>setEmail(e.target.value)} />
       </div>
       <br/>
       <div>
         <label htmlFor="password" className='headinglogin'>Password:</label>
-        <input type="password" id="password" name="password" className='inputform' value={password} onChange={(e)=>setPassword(e.target.value)} />
+        <input type="password" id="password" name="password" className='inputformm' value={password} onChange={(e)=>setPassword(e.target.value)} />
       </div>
       <br/>
       <div className='lb-cont'>
@@ -82,12 +82,12 @@ function Login() {
     <form onSubmit={signUp}>
       <div>
         <label htmlFor="signup-email" className='headinglogin hl-2'>Email:</label>
-        <input type="email" id="signup-email" name="signup-email" className='inputform' value={email} onChange={(e)=>setEmail(e.target.value)} />
+        <input type="email" id="signup-email" name="signup-email" className='inputformm' value={email} onChange={(e)=>setEmail(e.target.value)} />
       </div>
       <br/>
       <div>
         <label htmlFor="signup-password" className='headinglogin'>Password:</label>
-        <input type="password" id="signup-password" name="signup-password" className='inputform' value={password} onChange={(e)=>setPassword(e.target.value)} />
+        <input type="password" id="signup-password" name="signup-password" className='inputformm' value={password} onChange={(e)=>setPassword(e.target.value)} />
       </div>
       <br/>
     </form>
