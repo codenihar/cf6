@@ -61,7 +61,8 @@ Visit the "Joke Generator" section for a quick laugh. Each time you click the "G
 ## Articles
 
 Explore our collection of articles to gain insights into enhancing your mental health, dealing with social media pressure, and addressing online harassment. Feel free to contribute your own articles to share your knowledge and experiences with the community.
-![Uploading image.png…]()
+<img width="1421" alt="image" src="https://github.com/codenihar/cf6/assets/82893577/74f169da-236d-4402-bbab-34cd657bda11">
+
 
 
 
