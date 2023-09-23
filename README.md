@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# MassCoders Digital Age Wellbeing
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![MassCoders Logo](logo.png)
 
-## Available Scripts
+Welcome to MassCoders Digital Age Wellbeing, a web application designed to promote digital well-being among our community members. This application offers a range of features to help you monitor and improve your digital habits, access entertaining content, and stay informed about topics related to mental health, social media pressure, and online harassment.
 
-In the project directory, you can run:
+## Table of Contents
+- Features
+- Getting Started
+- Authentication
+- Dashboard
+- Joke Generator
+- Articles
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Authentication
+MassCoders Digital Age Wellbeing uses Google Firebase authentication to ensure a secure and seamless user experience. You can sign up or log in using your Email and Password.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Dashboard
+The dashboard provides insights into your app usage across various categories, such as entertainment, productivity, and finance. This feature helps you track your digital habits and make informed decisions to improve your well-being.
 
-### `npm test`
+### Joke Generator
+Take a break from your digital routine and have some fun with our random joke generator. We've integrated an API to provide you with a daily dose of humor.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Articles
+Stay informed and educated about topics related to mental health, social media pressure, and online harassment. Our articles section offers a collection of articles contributed by our community to help you navigate the digital age more confidently.
 
-### `npm run build`
+## Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To get started with MassCoders Digital Age Wellbeing, follow these steps:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone this repository to your local machine.
+2. Set up Firebase on your local machine.
+3. Install the required dependencies by running `npm install` or `yarn install`.
+4. Start the application locally using `npm start` or `yarn start`.
+5. Access the application in your web browser.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Authentication
 
-### `npm run eject`
+MassCoders Digital Age Wellbeing uses Google Firebase for authentication.
+<img width="1438" alt="image" src="https://github.com/codenihar/cf6/assets/82893577/35036c09-f9a8-45cb-849c-fa78c57ffaac">
+<img width="1434" alt="image" src="https://github.com/codenihar/cf6/assets/82893577/8bcfa796-574d-4ed2-86ab-8167c828ca80">
+<img width="1440" alt="image" src="https://github.com/codenihar/cf6/assets/82893577/2e985c9e-60b1-4be6-b207-1e830b7973e9">
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Dashboard [Using Firebase realtime database]
 
-## Learn More
+The dashboard provides a visual representation of your app usage in different categories. Use this information to identify areas where you can make improvements in your digital habits. The dashboard is accessible after you log in.
+<img width="1440" alt="image" src="https://github.com/codenihar/cf6/assets/82893577/d6530886-665b-4d39-b1a4-f87b2327943a">
+<img width="1429" alt="image" src="https://github.com/codenihar/cf6/assets/82893577/546585df-da4a-41ad-ad53-9bebbd20d06d">
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Joke Generator
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Visit the "Joke Generator" section for a quick laugh. Each time you click the "Get Joke" button, a new joke fetched from an API will appear. Enjoy a moment of humor during your digital well-being journey.
+<img width="1322" alt="image" src="https://github.com/codenihar/cf6/assets/82893577/ec3bc2ad-39a4-4dc8-b315-73b9e5d53b2f">
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Articles
 
-### Making a Progressive Web App
+Explore our collection of articles to gain insights into enhancing your mental health, dealing with social media pressure, and addressing online harassment. Feel free to contribute your own articles to share your knowledge and experiences with the community.
+![Uploading image.png…]()
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+We hope you find MassCoders Digital Age Wellbeing helpful in your journey to maintain a healthy digital lifestyle. If you have any questions, feedback, or suggestions, please don't hesitate to reach out. Happy digital well-being!
